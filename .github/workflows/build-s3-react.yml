@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - run: echo ${{ github.repository }}
-    - run: echo $GITHUB_WORKSPACE
+    - run: echo ${{ GITHUB_WORKSPACE }}
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
@@ -34,7 +34,7 @@ jobs:
       with:
         repository: estefa-932014/devops-templates
         path: devops-templates
-    - run: echo $GITHUB_WORKSPACE
+    - run: echo ${{ GITHUB_WORKSPACE }}
     - run: ls /home/runner/work   
   #  - name: Build
   #    id: build
