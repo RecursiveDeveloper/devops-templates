@@ -16,12 +16,6 @@ jobs:
       with:
         path: main
         
-    - name: Checkout tools repo
-      uses: actions/checkout@v4
-      with:
-        repository: RecursiveDeveloper/devops-templates
-        path: devops-templates
-        
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
@@ -35,7 +29,13 @@ jobs:
       with:
         name: dist
         path: ./dist
-    
-  #  - name: Build
-  #    id: build
-  #    uses: ./.github/actions/build
+        
+    - name: Checkout tools repo
+      uses: actions/checkout@v4
+      with:
+        repository: RecursiveDeveloper/devops-templates
+        path: devops-templates
+        
+    - name: Build
+      id: build
+      uses: ./.github/actions/build
