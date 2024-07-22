@@ -31,4 +31,4 @@ jobs:
       
     - name: Build
       id: build
-      uses: RecursiveDeveloper/devops-templates/.github/actions/build/action.yaml@main
+      uses: ./.github/actions/build
