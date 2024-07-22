@@ -13,14 +13,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - run: echo "GITHUB_WORKSPACE ${{ GITHUB_WORKSPACE }}"
+    - run: echo "GITHUB_WORKSPACE $GITHUB_WORKSPACE"
     
     - name: Checkout tools repo
       uses: actions/checkout@v4
       with:
         repository: RecursiveDeveloper/devops-templates
         path: ./devops-templates
-    - run: echo "GITHUB_WORKSPACE ${{ GITHUB_WORKSPACE }}"
+    - run: echo "GITHUB_WORKSPACE $GITHUB_WORKSPACE"
     
     - name: Set up Node.js
       uses: actions/setup-node@v4
