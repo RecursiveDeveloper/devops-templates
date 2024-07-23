@@ -11,11 +11,11 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-    - run: echo "Variable github user => ${ vars.GITHUBUSER }"
+    - run: echo "Variable github user => ${{ vars.USERACTOR }}"
     - name: Checkout tools repo
       uses: actions/checkout@v4
       with:
-        repository: ${ vars.GITHUBUSER }/devops-templates
+        repository: ${{ vars.USERACTOR }}/devops-templates
         path: ./devops-templates
     
     - name: Build
