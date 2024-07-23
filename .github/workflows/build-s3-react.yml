@@ -15,7 +15,7 @@ jobs:
     - name: Checkout tools repo
       uses: actions/checkout@v4
       with:
-        repository: ${{ vars.USERACTOR }}/devops-templates
+        repository: RecursiveDeveloper/devops-templates
         path: ./devops-templates
     
     - name: Build
