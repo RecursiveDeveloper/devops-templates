@@ -13,4 +13,4 @@ runs:
       run: npm install
     - name: Build
       run: npm run build
-   
+      shell: bash
